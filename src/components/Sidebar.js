@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { NavLink } from "react-router-dom";
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -15,6 +15,8 @@ const SideBar = () => {
     </Wrapper>
   );
 };
+
+
 
 const Wrapper = styled.div`
   height: 10vh;
@@ -36,14 +38,19 @@ const Navig = styled(NavLink)`
   display: flex;
   color: black;
   padding-top: 30px;
-  text-decoration: none;
+  text-decoration: underline 0.05em rgba(0, 0, 0, 0);
+  text-underline-offset: 0.2em;
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
   align-items: center;
-  font-weight: bolder;
+
   height: 10vh;
   padding-left: 15px;
   border-radius: 20px;
+
   &:hover {
-    text-decoration: underline;
+    text-decoration-color: black;
+  text-underline-offset: 0.4em;
+
   }
   @media (min-width: 200px) and (max-width: 700px) {
     height: 3vh;

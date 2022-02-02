@@ -69,8 +69,8 @@ bottom:0;
 z-index: -1;
 `
 const TitleDiv = styled.div`
-letter-spacing: 5px;
-
+letter-spacing: 10px;
+font-size: 25px;
 
 `;
 
