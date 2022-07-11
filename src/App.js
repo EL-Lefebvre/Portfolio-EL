@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import styled from "styled-components";
 import GlobalStyles from "./GlobalStyles";
 import { Link, animateScroll as scroll } from "react-scroll";
-import Skills from "./components/Skills";
+import Skills from "./components/skillsSection/Skills";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";

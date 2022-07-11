@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import Background from "../assets/background-3.jpg";
 import Box from '@mui/material/Box'
-import Skills from "./SkillsSection/Skills"
+import Skills from "./skillsSection/Skills"
 const Home = () => {
   return (
     <Box>
