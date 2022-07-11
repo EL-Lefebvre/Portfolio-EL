@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-const ProjectCard = (title, link) => {
+const ProjectCard = ({title, link}: any) => {
     return (
         <div>
             

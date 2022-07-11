@@ -1,24 +1,27 @@
-import React from "react";
 import styled, { keyframes } from "styled-components";
 import Background from "../assets/background-3.jpg";
-import mountainsClip from '../assets/mountains.mp4'
+import Box from '@mui/material/Box'
+import Skills from "./SkillsSection/Skills"
 const Home = () => {
   return (
-    <>
-      <MainClip className='videoTag' autoPlay loop muted>
-    <source src={mountainsClip} type='video/mp4' />
-</MainClip>
+    <Box>
+
 
       <Main>
         <TitleDiv>
           <h1>Elodie Lefebvre</h1>
         </TitleDiv>
         <SubContainer>
-          <h2>Full Stack Developer</h2>
+          <h2>Frontend Developer</h2>
         </SubContainer>
       </Main>
+<Box> 
+Frontend Developer with over a year of experience, with some backend knowledge as well. I am an ambitious, self-starting, self-reliant yet open-minded developer who enjoys the challenge of building projects, finding creative solutions and pushing myself to deliver the best possible product in an efficient way.
 
-    </>
+<Skills />
+
+</Box>
+    </Box>
   );
 };
 const fade = keyframes`{
