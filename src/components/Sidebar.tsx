@@ -24,7 +24,8 @@ const Wrapper = styled.div`
   width: 100vw;
   position: fixed;
   z-index:10;
-
+  background-color: #b68d40;
+  
 `;
 const Main = styled.div`
   display: flex;

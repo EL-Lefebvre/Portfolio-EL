@@ -16,6 +16,7 @@ body {
   code {
     font-family: source-code-pro, 'Poppins', 
       monospace;
+      background-color: '#fdf5df'
   }
   
   *{

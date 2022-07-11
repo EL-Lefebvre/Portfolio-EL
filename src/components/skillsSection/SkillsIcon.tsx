@@ -3,10 +3,10 @@ import React from 'react'
 
 const SkillsIcon = (src: any ) => {
   return (
-      <Card>
+   
 
-<CardMedia src={src}  sx={{width: '50px', height: '50px'}}/>
-      </Card>
+<img src={src}  style={{width: '100px', height: '100px'}}/>
+     
   )
 }
 

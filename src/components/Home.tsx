@@ -4,7 +4,7 @@ import Box from '@mui/material/Box'
 import Skills from "./skillsSection/Skills"
 const Home = () => {
   return (
-    <Box>
+    <Box sx={{  backgroundColor: '#f4ebd0'}}>
 
 
       <Main>
@@ -16,7 +16,10 @@ const Home = () => {
         </SubContainer>
       </Main>
 <Box> 
+  <Box p={4}>
+
 Frontend Developer with over a year of experience, with some backend knowledge as well. I am an ambitious, self-starting, self-reliant yet open-minded developer who enjoys the challenge of building projects, finding creative solutions and pushing myself to deliver the best possible product in an efficient way.
+  </Box>
 
 <Skills />
 
