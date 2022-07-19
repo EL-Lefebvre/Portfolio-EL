@@ -4,11 +4,11 @@ import Box from '@mui/material/Box'
 import Skills from "./skillsSection/Skills"
 const Home = () => {
   return (
-    <Box sx={{  backgroundColor: '#f4ebd0'}}>
+    <Box sx={{  backgroundColor: '#203334'}}>
 
 
-      <Main>
-        <TitleDiv>
+      <Main style={{  color: 'white'}}>
+        <TitleDiv  >
           <h1>Elodie Lefebvre</h1>
         </TitleDiv>
         <SubContainer>
@@ -16,7 +16,7 @@ const Home = () => {
         </SubContainer>
       </Main>
 <Box> 
-  <Box p={4}>
+  <Box p={4} style={{  color: 'white'}}>
 
 Frontend Developer with over a year of experience, with some backend knowledge as well. I am an ambitious, self-starting, self-reliant yet open-minded developer who enjoys the challenge of building projects, finding creative solutions and pushing myself to deliver the best possible product in an efficient way.
   </Box>

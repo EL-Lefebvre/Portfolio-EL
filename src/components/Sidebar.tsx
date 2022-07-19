@@ -1,16 +1,31 @@
 import React from "react";
+
 import styled, { keyframes } from "styled-components";
 import { NavLink } from "react-router-dom";
 import { Link, animateScroll as scroll } from "react-scroll";
-
+import { Box } from "@mui/material";
+import logo from '../assets/main_logo_1.png'
 const SideBar = () => {
   return (
     <Wrapper>
-      <Main>
+
+      <Box
+        component="img"
+        sx={{
+          height: 50,
+          width: 50,
+paddingLeft: 10,
+        }}
+        alt="main logo"
+        src={logo}
+      />
+ 
+   <Main>
         <Navig to="/">Home</Navig>
         <Navig to="/portfolio">Portfolio</Navig>
         <Navig to="/skills">Skills</Navig>
         <Navig to="/contact">Contact</Navig>
+  
       </Main>
     </Wrapper>
   );
@@ -19,19 +34,21 @@ const SideBar = () => {
 
 
 const Wrapper = styled.div`
-  height: 10vh;
-  position: absolute;
-  width: 100vw;
+  height: 30vh;
+width: 90vw;
+
   position: fixed;
   z-index:10;
-  background-color: #b68d40;
+display:flex;
+justify-content: space-between;
+align-items: center;
   
 `;
 const Main = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-
+  
   @media (min-width: 200px) and (max-width: 700px) {
   }
 `;
@@ -43,13 +60,13 @@ const Navig = styled(NavLink)`
   text-underline-offset: 0.2em;
   transition: text-decoration-color 300ms, text-underline-offset 300ms;
   align-items: center;
-
+  color: #ffde59;
   height: 10vh;
   padding-left: 15px;
   border-radius: 20px;
-
+font-weight: bolder;
   &:hover {
-    text-decoration-color: black;
+    text-decoration-color: #ffde59;
   text-underline-offset: 0.4em;
 
   }
