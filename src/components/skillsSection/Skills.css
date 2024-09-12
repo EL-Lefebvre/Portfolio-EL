@@ -1,0 +1,13 @@
+.tree {
+  margin-bottom: 5vw;
+  margin-top: 5vw;
+  text-align: left;
+  list-style-position: inside;
+}
+
+.tree .first {
+  list-style-type: '┌───';
+}
+.tree li ul li {
+  list-style-type: '│\00a0\00a0\00a0├───';
+}

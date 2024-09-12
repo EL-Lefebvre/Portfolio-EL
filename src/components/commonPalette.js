@@ -1,3 +1,12 @@
-const commonPalette = {White: '#f5f5f5',
-LightGreen: '#8db48e',
-DarkGreen: '#4d724d'}
+// const commonPalette = {Tan
+
+//     #b68d40
+//     Cream
+    
+//     #f4ebd0
+//     Charcoal
+    
+//     #122620
+//     Gold
+    
+//     #d6ad60}

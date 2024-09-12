@@ -15,29 +15,48 @@ const Skills = () => {
     <Box>
       <Box
         sx={{
-          height: '200px',
+          height: "200px",
           display: "flex",
 
           alignItems: "center",
           justifyContent: "space-evenly",
-          backgroundColor: '#122620',
+          backgroundColor: "white",
         }}
       >
-        {skillsList.map((skillIcon): any => (
-          <Box
-            sx={{
-              width: "150px",
-              height: "150px",
-              backgroundColor: "white",
-              borderRadius: "50%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <img src={skillIcon} style={{ width: "100px", height: "100px" }} />
-          </Box>
-        ))}
+        <ul className="tree">
+          <li className="first">
+            Frontend Basics
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+          </li>
+          <li>
+            Javascript Libraries
+            <ul>
+              <li>
+                React
+                <ul>
+                  <li>Hooks</li>
+                  <li>Redux</li>
+                  <li>Context API</li>
+                  <li>React Testing Libraries</li>
+                </ul>
+              </li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+          </li>
+          <li>
+            Backend
+            <ul>
+              <li>NodeJS</li>
+              <li>MongoDB</li>
+              <li>Express</li>
+            </ul>
+          </li>
+        </ul>
       </Box>
     </Box>
   );
