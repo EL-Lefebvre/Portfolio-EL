@@ -1,0 +1,27 @@
+.pageContainer {
+  display: flex;
+  height: 100%;
+  width: 100vw;
+}
+
+.staticSection {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 50%; 
+  height: 100%; 
+  padding: 20px;
+  background-color: #f0f0f0;
+  box-sizing: border-box; 
+  overflow: hidden; 
+}
+
+.scrollableSection {
+  margin-left: 50%; 
+  overflow-y: auto; 
+  height: 100%;
+  width: 50%; 
+  padding: 20px;
+  background-color: #e0e0e0;
+  box-sizing: border-box; 
+}

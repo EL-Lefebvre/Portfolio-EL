@@ -7,15 +7,14 @@ import Skills from "./components/skillsSection/Skills";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
-import Sidebar from "./components/Sidebar"
+import Sidebar from "./components/Sidebar";
 function App() {
   return (
     <Wrapper>
       <Router>
-      <Sidebar />
-        <Main>
-          <Switch>
-          <Route exact path="/skills">
+        {/* <Sidebar /> */}
+        <Switch>
+          {/* <Route exact path="/skills">
               <Skills />
             </Route>
             <Route  exact path="/portfolio">
@@ -23,12 +22,11 @@ function App() {
             </Route>
             <Route exact path="/contact">
               <Contact />
-            </Route>
-            <Route exact path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </Main>
+            </Route> */}
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
         <GlobalStyles />
       </Router>
     </Wrapper>
@@ -36,11 +34,9 @@ function App() {
 }
 
 const Wrapper = styled.div`
-max-width:100vw;
+  width: 100%;
 `;
-const Main = styled.div`
-height:120vh;
-
-
-`;
+// const Main = styled.div`
+//   height: 120vh;
+// `;
 export default App;

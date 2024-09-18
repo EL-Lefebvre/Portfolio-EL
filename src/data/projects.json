@@ -1,0 +1,24 @@
+{
+    "name": "MovieFlix",
+    "url": "https://movieflix-mockup.netlify.app/",
+    "code": "https://github.com/EL-Lefebvre/Netflix-Mockup",
+    "description": "Netflix mockup to find Movies, Tvshows details and search specific titles using MovieDB API. ",
+    "used": [
+      {
+        "thing": "JavaScript"
+      },
+      {
+        "thing": "React"
+      },
+      {
+        "thing": "React Router"
+      },
+      {
+        "thing": "Axios"
+      },
+      {
+        "thing": "MovieDB API"
+      }
+    ]
+  }
+  
