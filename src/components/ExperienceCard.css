@@ -1,0 +1,33 @@
+.ExperienceCard {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .CardContent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+  }
+  
+  .DateSection {
+    width: 150px; /* Adjust width as needed */
+    padding-right: 20px; /* Space between date and details */
+    border-right: 1px solid #ddd; /* Optional border for separation */
+  }
+  
+  .DetailsSection {
+    flex: 1; /* Takes up remaining space */
+  }
+  
+  .Projects {
+    margin-top: 10px;
+  }
+  
+  .ProjectDetails {
+    margin-bottom: 15px; /* Space between project details */
+  }
+  

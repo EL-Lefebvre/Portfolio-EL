@@ -1,0 +1,24 @@
+{
+    "company": "TEKSystems",
+"date": "July 2021- February 2024",
+    "description": "Frontend Software Developer in Montreal",
+    "projects": [
+      {
+        "project_name": "Medical Software", 
+        "date": "September 2021 - January 2022",
+    "description":"Worked in an agile/scrum team for 5 months to update a legacy medical software platform using React, Redux Toolkit, TypeScript, and GitLab. Contributed to unit testing with Jest to meet coverage requirements, and participated in pair programming, code reviews, and daily scrum meetings."
+      },
+      {
+        "project_name": "HMHCO- Teaching Platform",
+        "date": "February 2022 - April 2023",
+        "description":"Collaborated with a larger team on a greenfield educational platform using React, TypeScript, Jenkins, Jest, and a custom client library. Led frontend development and responsiveness, working closely with the client's UI team to ensure a high-quality product. Contributed to unit testing with Jest, pair programming, code reviews, and daily scrum meetings."
+      },
+      {
+        "project_name": "Rivian",
+        "date": "June 2023 - February 2024",
+        "description":"I contributed to two internal software projects at Rivian, focused on their fabrication pipeline for employees. I utilized React, TypeScript, and Material UI to implement new features, collaborating with the client on design and layout decisions."
+      }
+
+    ]
+  }
+  

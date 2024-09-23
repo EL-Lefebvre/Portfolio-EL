@@ -1,42 +1,33 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import styled from "styled-components";
 import GlobalStyles from "./GlobalStyles";
-import { Link, animateScroll as scroll } from "react-scroll";
-import Skills from "./components/skillsSection/Skills";
 import Home from "./components/Home";
+import Skills from "./components/skillsSection/Skills";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
-import Sidebar from "./components/Sidebar";
+import SideBar from "./components/Sidebar";
 function App() {
   return (
-    <Wrapper>
-      <Router>
-        {/* <Sidebar /> */}
-        <Switch>
-          {/* <Route exact path="/skills">
-              <Skills />
-            </Route>
-            <Route  exact path="/portfolio">
-              <Portfolio />
-            </Route>
-            <Route exact path="/contact">
-              <Contact />
-            </Route> */}
-          <Route exact path="/">
-            <Home />
-          </Route>
-        </Switch>
-        <GlobalStyles />
-      </Router>
-    </Wrapper>
+    <Router>
+      <GlobalStyles />
+      <Wrapper>
+        <SideBar />
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </Wrapper>
+    </Router>
   );
 }
 
 const Wrapper = styled.div`
   width: 100%;
+  backgroundcolor: "blue";
 `;
-// const Main = styled.div`
-//   height: 120vh;
-// `;
+
 export default App;

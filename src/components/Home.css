@@ -1,27 +1,45 @@
 .pageContainer {
   display: flex;
-  height: 100%;
+  flex-direction: column; 
+  height: 100%; 
   width: 100vw;
 }
 
 .staticSection {
-  position: fixed; 
-  top: 0;
-  left: 0;
-  width: 50%; 
-  height: 100%; 
+  width: 100%; 
   padding: 20px;
   background-color: #f0f0f0;
-  box-sizing: border-box; 
-  overflow: hidden; 
+  box-sizing: border-box;
 }
 
 .scrollableSection {
-  margin-left: 50%; 
-  overflow-y: auto; 
-  height: 100%;
-  width: 50%; 
+  width: 100%;
   padding: 20px;
   background-color: #e0e0e0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  overflow-y: auto;
+  height: 50vh; 
+}
+
+@media (min-width: 768px) {
+  .pageContainer {
+    flex-direction: row; 
+    height: 100vh; 
+  }
+
+  .staticSection {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 50%; 
+    height: 100vh; 
+    overflow: hidden; 
+  }
+
+  .scrollableSection {
+    margin-left: 50%; 
+    width: 50%; 
+    height: 100%; 
+    overflow-y: auto; 
+  }
 }

@@ -1,0 +1,59 @@
+/* Container for the sidebar */
+.SidebarContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width on mobile */
+    max-width: 300px; /* Max width on larger screens */
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-y: auto; /* Scroll if content overflows */
+  }
+  
+  /* Profile section styling */
+  .ProfileSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: auto; /* Pushes the footer to the bottom */
+  }
+  
+  /* Name styling */
+  .name {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Title styling */
+  .title {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Description styling */
+  .description {
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Footer section styling */
+  .FooterSection {
+    margin-top: auto; /* Pushes the footer to the bottom of the container */
+    text-align: center;
+  }
+  
+  /* Responsive styles for mobile view */
+  @media (max-width: 768px) {
+    .SidebarContainer {
+      position: static; /* Position static on mobile */
+      width: 100%; /* Full width on mobile */
+      height: auto; /* Adjust height to fit content */
+      max-width: none; /* Remove max-width */
+    }
+  }
+  
